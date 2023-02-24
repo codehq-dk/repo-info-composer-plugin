@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1677242396">
+  <project timestamp="1677242396">
+    <file name="/Users/joej/Kodus2/repo-info-composer-plugin/src/Factory/ComposerInformationfactory.php">
+      <class name="CodeHqDk\RepositoryInformation\Factory\ComposerInformationfactory" namespace="global">
+        <metrics complexity="7" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="31" coveredelements="31"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="16" type="stmt" count="4"/>
+      <line num="17" type="stmt" count="3"/>
+      <line num="21" type="method" name="createBlocks" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="28" type="method" name="getRepositoryRequirements" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="33" type="method" name="listAvailableInformationBlocks" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="40" type="method" name="createDirectDependenciesBlock" visibility="private" complexity="2" crap="2" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="59" type="stmt" count="1"/>
+      <line num="60" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="62" type="stmt" count="1"/>
+      <line num="63" type="stmt" count="1"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="65" type="stmt" count="1"/>
+      <metrics loc="68" ncloc="67" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="31" coveredelements="31"/>
+    </file>
+    <file name="/Users/joej/Kodus2/repo-info-composer-plugin/src/InformationBlocks/DirectDependenciesBlock.php">
+      <class name="CodeHqDk\RepositoryInformation\InformationBlocks\DirectDependenciesBlock" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+      </class>
+      <line num="12" type="method" name="fromArray" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <line num="15" type="stmt" count="1"/>
+      <line num="16" type="stmt" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <metrics loc="23" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/Users/joej/Kodus2/repo-info-composer-plugin/src/Provider/ComposerInformationFactoryProvider.php">
+      <class name="CodeHqDk\RepositoryInformation\Provider\ComposerInformationFactoryProvider" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="11" type="method" name="addFactory" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <metrics files="3" loc="108" ncloc="104" classes="3" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="36" elements="43" coveredelements="43"/>
+  </project>
+</coverage>
