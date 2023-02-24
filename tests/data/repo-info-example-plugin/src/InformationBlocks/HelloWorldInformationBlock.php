@@ -4,10 +4,7 @@ namespace CodeHqDk\RepositoryInformation\InformationBlocks;
 
 use CodeHqDk\RepositoryInformation\Model\BaseInformationBlock;
 
-/**
- * Use this class to get information about how many and which direct dependencies your code repository have
- */
-class DirectDependenciesBlock extends BaseInformationBlock
+class HelloWorldInformationBlock extends BaseInformationBlock
 {
     public static function fromArray(array $array): self {
         return new self(
@@ -17,6 +14,6 @@ class DirectDependenciesBlock extends BaseInformationBlock
             $array['modified_timestamp'],
             $array['details'],
             $array['information_origin'],
-        );
+       );
     }
 }
