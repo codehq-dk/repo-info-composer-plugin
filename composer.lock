@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3397c0e7620edef2fe8dbe3598cf787e",
+    "content-hash": "ca4850cdd6f728aeae8532cc34837065",
     "packages": [
         {
             "name": "codehq-dk/linux-bash-helper",
-            "version": "v0.0.1-alpha",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codehq-dk/linux-bash-helper.git",
-                "reference": "d1473bef8507c270090445efbee560b5d82b5974"
+                "reference": "3ea08c8c3b7028e3e8b63af26c5b2f19cb6c62a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codehq-dk/linux-bash-helper/zipball/d1473bef8507c270090445efbee560b5d82b5974",
-                "reference": "d1473bef8507c270090445efbee560b5d82b5974",
+                "url": "https://api.github.com/repos/codehq-dk/linux-bash-helper/zipball/3ea08c8c3b7028e3e8b63af26c5b2f19cb6c62a6",
+                "reference": "3ea08c8c3b7028e3e8b63af26c5b2f19cb6c62a6",
                 "shasum": ""
             },
             "require": {
@@ -39,22 +39,22 @@
             "description": "Small helper to make life easier when running bash commands in php with exec command ",
             "support": {
                 "issues": "https://github.com/codehq-dk/linux-bash-helper/issues",
-                "source": "https://github.com/codehq-dk/linux-bash-helper/tree/v0.0.1-alpha"
+                "source": "https://github.com/codehq-dk/linux-bash-helper/tree/1.0.0-alpha1"
             },
-            "time": "2023-02-20T17:18:06+00:00"
+            "time": "2023-02-24T18:53:37+00:00"
         },
         {
             "name": "codehq-dk/repo-info-contracts",
-            "version": "v0.0.1-alpha",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codehq-dk/repo-info-contracts.git",
-                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f"
+                "reference": "769ecfd1fbb9dc5d26d084f962422e7988df6aab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codehq-dk/repo-info-contracts/zipball/e24d15dc4601468fb47702f8625fe33be52bf53f",
-                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f",
+                "url": "https://api.github.com/repos/codehq-dk/repo-info-contracts/zipball/769ecfd1fbb9dc5d26d084f962422e7988df6aab",
+                "reference": "769ecfd1fbb9dc5d26d084f962422e7988df6aab",
                 "shasum": ""
             },
             "require": {
@@ -76,9 +76,9 @@
             "description": "Repository Information Contract. Depend on this module when creation new repository information factory plugins",
             "support": {
                 "issues": "https://github.com/codehq-dk/repo-info-contracts/issues",
-                "source": "https://github.com/codehq-dk/repo-info-contracts/tree/v0.0.1-alpha"
+                "source": "https://github.com/codehq-dk/repo-info-contracts/tree/1.0.0-alpha1"
             },
-            "time": "2023-02-19T20:41:48+00:00"
+            "time": "2023-02-24T18:45:51+00:00"
         },
         {
             "name": "lcobucci/clock",
@@ -1931,7 +1931,7 @@
         "codehq-dk/repo-info-contracts": 15,
         "codehq-dk/linux-bash-helper": 15
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.1"

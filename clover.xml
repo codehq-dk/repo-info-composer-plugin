@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677261527">
-  <project timestamp="1677261527">
+<coverage generated="1677265037">
+  <project timestamp="1677265037">
     <file name="/home/jesper_privat/web-udvikling/repo-info-composer-plugin/src/Factory/ComposerInformationfactory.php">
       <class name="CodeHqDk\RepositoryInformation\Factory\ComposerInformationfactory" namespace="global">
         <metrics complexity="9" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="29" elements="39" coveredelements="34"/>

@@ -1,6 +1,10 @@
 # Release notes
 ( Repository Information Composer plugin )
 
+## Version 1.0.0-alpha1
+## Changes
+* Change to correct composer alpha sem ver
+
 ## Version v0.0.2-alpha
 ### Fix
 * Make factory run composer install if needed
