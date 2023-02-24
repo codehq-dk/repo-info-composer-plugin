@@ -1,0 +1,46 @@
+{
+    "packages": [
+        {
+            "name": "codehq-dk/repo-info-contracts",
+            "version": "v0.0.1-alpha",
+            "version_normalized": "0.0.1.0-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codehq-dk/repo-info-contracts.git",
+                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codehq-dk/repo-info-contracts/zipball/e24d15dc4601468fb47702f8625fe33be52bf53f",
+                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "time": "2023-02-19T20:41:48+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "CodeHqDk\\RepositoryInformation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Repository Information Contract. Depend on this module when creation new repository information factory plugins",
+            "support": {
+                "issues": "https://github.com/codehq-dk/repo-info-contracts/issues",
+                "source": "https://github.com/codehq-dk/repo-info-contracts/tree/v0.0.1-alpha"
+            },
+            "install-path": "../codehq-dk/repo-info-contracts"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}
