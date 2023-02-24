@@ -2,12 +2,12 @@
     "name": "codehq-dk/repo-info-composer-plugin",
     "description": "Repository Information Plugin that uses composer to give details about repositories",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "require": {
         "php": ">=8.1",
         "codehq-dk/repo-info-contracts": "v0.0.1-alpha",
-        "codehq-dk/linux-bash-helper": "dev-main",
-        "lcobucci/clock": "3.1.x-dev"
+        "codehq-dk/linux-bash-helper": "v0.0.1-alpha",
+        "lcobucci/clock": "^3.0.0"
     },
     "autoload": {
         "psr-4": {
