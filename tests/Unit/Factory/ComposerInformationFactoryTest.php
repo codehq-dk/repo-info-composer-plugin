@@ -36,8 +36,19 @@ class ComposerInformationFactoryTest extends TestCase
             'This information was created by the Composer plugin'
         );
 
+        $expected_github_test_string = '<p>codehq-dk/repo-info-contracts v0.0.1-alpha Repository Information Contrac';
         $path_to_sample_repository = dirname(__FILE__, 3) . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'repo-info-example-plugin';
+        $actual_blocks = $factory->createBlocks($path_to_sample_repository);
+        /**
+         * @var DirectDependenciesBlock $actual_block
+         */
+        $actual_block = array_pop($actual_blocks);
 
-        $this->assertEquals([$expected_block], $factory->createBlocks($path_to_sample_repository));
+        $this->assertEquals($expected_block->getHeadline(), $actual_block->getHeadline());
+        $this->assertEquals($expected_block->getLabel(), $actual_block->getLabel());
+        $this->assertEquals($expected_block->getValue(), $actual_block->getValue());
+        $this->assertEquals($expected_block->getModifiedTimestamp(), $actual_block->getModifiedTimestamp());
+        $this->assertStringContainsString($expected_github_test_string, $actual_block->getDetails());
+        $this->assertEquals($expected_block->getInformationOrigin(), $actual_block->getInformationOrigin());
     }
 }

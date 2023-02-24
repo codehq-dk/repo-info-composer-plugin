@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677243048">
-  <project timestamp="1677243048">
+<coverage generated="1677244257">
+  <project timestamp="1677244257">
     <file name="/Users/joej/Kodus2/repo-info-composer-plugin/src/Factory/ComposerInformationfactory.php">
       <class name="CodeHqDk\RepositoryInformation\Factory\ComposerInformationfactory" namespace="global">
         <metrics complexity="7" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="31" coveredelements="31"/>
