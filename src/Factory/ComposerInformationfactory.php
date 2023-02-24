@@ -11,6 +11,8 @@ use Lcobucci\Clock\SystemClock;
 
 class ComposerInformationfactory implements InformationFactory
 {
+    private const DO_NOT_ASK_ANY_INTERACTIVE_QUESTION = '--no-interaction';
+
     public function __construct(private ?Clock $clock = null)
     {
         if ($this->clock === null) {
@@ -20,6 +22,8 @@ class ComposerInformationfactory implements InformationFactory
 
     public function createBlocks(string $local_path_to_code): array
     {
+        $this->runComposerInstallIfNeeded($local_path_to_code);
+
         return [
             $this->createDirectDependenciesBlock($local_path_to_code),
         ];
@@ -63,5 +67,19 @@ class ComposerInformationfactory implements InformationFactory
             $list_of_direct_dependencies,
             'This information was created by the Composer plugin'
         );
+    }
+
+    private function runComposerInstallIfNeeded(string $local_path_to_code): void
+    {
+        if (file_exists($local_path_to_code . DIRECTORY_SEPARATOR . 'vendor')) {
+            return;
+        }
+
+        $composer = Environment::getComposerPath();
+        $php = Environment::getPhpPath();
+
+        $command_to_run = "{$php} {$composer} install --working-dir={$local_path_to_code} " . self::DO_NOT_ASK_ANY_INTERACTIVE_QUESTION;
+
+        Bash::runCommand($command_to_run);
     }
 }
