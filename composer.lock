@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f311e9cd230337d57cd97eca4a4db688",
+    "content-hash": "a15221925b5bde13103899b147464573",
     "packages": [
         {
             "name": "codehq-dk/linux-bash-helper",
