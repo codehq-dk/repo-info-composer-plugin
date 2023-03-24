@@ -11,6 +11,10 @@ use Lcobucci\Clock\SystemClock;
 
 class ComposerInformationfactory implements InformationFactory
 {
+    public const DEFAULT_ENABLED_BLOCKS = [
+        DirectDependenciesBlock::class,
+    ];
+
     private const DO_NOT_ASK_ANY_INTERACTIVE_QUESTION = '--no-interaction';
 
     public function __construct(private ?Clock $clock = null)
@@ -20,9 +24,13 @@ class ComposerInformationfactory implements InformationFactory
         }
     }
 
-    public function createBlocks(string $local_path_to_code): array
+    public function createBlocks(string $local_path_to_code, array $information_block_types_to_create = self::DEFAULT_ENABLED_BLOCKS): array
     {
         $this->runComposerInstallIfNeeded($local_path_to_code);
+
+        if (!in_array(DirectDependenciesBlock::class, $information_block_types_to_create)) {
+            return [];
+        }
 
         return [
             $this->createDirectDependenciesBlock($local_path_to_code),
