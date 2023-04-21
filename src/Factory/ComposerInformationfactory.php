@@ -4,6 +4,8 @@ namespace CodeHqDk\RepositoryInformation\Factory;
 
 use CodeHqDk\LinuxBashHelper\Bash;
 use CodeHqDk\LinuxBashHelper\Environment;
+use CodeHqDk\LinuxBashHelper\Exception\LinuxBashHelperException;
+use CodeHqDk\RepositoryInformation\Exception\RepositoryInformationException;
 use CodeHqDk\RepositoryInformation\InformationBlocks\DirectDependenciesBlock;
 use CodeHqDk\RepositoryInformation\Model\RepositoryRequirements;
 use Lcobucci\Clock\Clock;
@@ -26,6 +28,8 @@ class ComposerInformationfactory implements InformationFactory
 
     public function createBlocks(string $local_path_to_code, array $information_block_types_to_create = self::DEFAULT_ENABLED_BLOCKS): array
     {
+        $this->throwExceptionIfComposerIsNotCorrectSetup();
+
         $this->runComposerInstallIfNeeded($local_path_to_code);
 
         if (!in_array(DirectDependenciesBlock::class, $information_block_types_to_create)) {
@@ -89,5 +93,21 @@ class ComposerInformationfactory implements InformationFactory
         $command_to_run = "{$php} {$composer} install --working-dir={$local_path_to_code} " . self::DO_NOT_ASK_ANY_INTERACTIVE_QUESTION;
 
         Bash::runCommand($command_to_run);
+    }
+
+    /**
+     * @throws RepositoryInformationException
+     */
+    private function throwExceptionIfComposerIsNotCorrectSetup(): void {
+        $composer = Environment::getComposerPath();
+        $php = Environment::getPhpPath();
+
+        $command_to_run = "{$php} {$composer} diagnose " . self::DO_NOT_ASK_ANY_INTERACTIVE_QUESTION;
+
+        try {
+            Bash::runCommand($command_to_run);
+        } catch (LinuxBashHelperException $bash_helper_exception) {
+            throw new RepositoryInformationException('Error composer diagonse command failed - aborting!');
+        }
     }
 }
