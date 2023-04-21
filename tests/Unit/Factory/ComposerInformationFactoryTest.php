@@ -38,7 +38,7 @@ class ComposerInformationFactoryTest extends TestCase
 
         $expected_github_test_string = '<p>codehq-dk/repo-info-contracts v0.0.1-alpha Repository Information Contrac';
         $path_to_sample_repository = dirname(__FILE__, 3) . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'repo-info-example-plugin';
-        $actual_blocks = $factory->createBlocks($path_to_sample_repository);
+        $actual_blocks = $factory->createBlocks($path_to_sample_repository, ComposerInformationfactory::DEFAULT_ENABLED_BLOCKS, false);
         /**
          * @var DirectDependenciesBlock $actual_block
          */
