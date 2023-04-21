@@ -28,7 +28,9 @@ class ComposerInformationfactory implements InformationFactory
 
     public function createBlocks(string $local_path_to_code, array $information_block_types_to_create = self::DEFAULT_ENABLED_BLOCKS, bool $run_composer_diagnose = true): array
     {
-        $this->throwExceptionIfComposerIsNotCorrectSetup();
+        if ($run_composer_diagnose === true) {
+            $this->throwExceptionIfComposerIsNotCorrectSetup();
+        }
 
         $this->runComposerInstallIfNeeded($local_path_to_code);
 
