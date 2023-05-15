@@ -1,12 +1,13 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Factory;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Factory;
 
 use CodeHqDk\LinuxBashHelper\Bash;
 use CodeHqDk\LinuxBashHelper\Environment;
 use CodeHqDk\LinuxBashHelper\Exception\LinuxBashHelperException;
 use CodeHqDk\RepositoryInformation\Exception\RepositoryInformationException;
-use CodeHqDk\RepositoryInformation\InformationBlocks\DirectDependenciesBlock;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\InformationBlocks\DirectDependenciesBlock;
+use CodeHqDk\RepositoryInformation\Factory\InformationFactory;
 use CodeHqDk\RepositoryInformation\Model\RepositoryRequirements;
 use Lcobucci\Clock\Clock;
 use Lcobucci\Clock\SystemClock;

@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Tests\Mock;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Tests\Mock;
 
 use CodeHqDk\RepositoryInformation\Factory\InformationFactory;
 use CodeHqDk\RepositoryInformation\Service\ProviderDependencyService;

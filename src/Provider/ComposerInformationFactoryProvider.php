@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Provider;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Provider;
 
-use CodeHqDk\RepositoryInformation\Factory\ComposerInformationfactory;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\Factory\ComposerInformationfactory;
 use CodeHqDk\RepositoryInformation\Factory\InformationFactoryProvider;
 use CodeHqDk\RepositoryInformation\Service\ProviderDependencyService;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Tests\Unit\Provider;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Tests\Unit\Provider;
 
-use CodeHqDk\RepositoryInformation\Provider\ComposerInformationFactoryProvider;
-use CodeHqDk\RepositoryInformation\Tests\Mock\MockProvider;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\Provider\ComposerInformationFactoryProvider;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\Tests\Mock\MockProvider;
 use PHPUnit\Framework\TestCase;
 
 class ProviderTest extends TestCase

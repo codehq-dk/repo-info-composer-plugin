@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Tests\Unit\Factory;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Tests\Unit\Factory;
 
-use CodeHqDk\RepositoryInformation\Factory\ComposerInformationfactory;
-use CodeHqDk\RepositoryInformation\InformationBlocks\DirectDependenciesBlock;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\Factory\ComposerInformationfactory;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\InformationBlocks\DirectDependenciesBlock;
 use CodeHqDk\RepositoryInformation\Model\RepositoryRequirements;
 use Lcobucci\Clock\FrozenClock;
 use PHPUnit\Framework\TestCase;

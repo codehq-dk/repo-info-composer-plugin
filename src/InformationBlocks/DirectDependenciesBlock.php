@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\InformationBlocks;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\InformationBlocks;
 
 use CodeHqDk\RepositoryInformation\Model\BaseInformationBlock;
 

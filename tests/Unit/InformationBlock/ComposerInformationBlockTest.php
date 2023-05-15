@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Tests\Unit\InformationBlock;
+namespace CodeHqDk\RepositoryInformation\ComposerPlugin\Tests\Unit\InformationBlock;
 
-use CodeHqDk\RepositoryInformation\InformationBlocks\DirectDependenciesBlock;
+use CodeHqDk\RepositoryInformation\ComposerPlugin\InformationBlocks\DirectDependenciesBlock;
 use PHPUnit\Framework\TestCase;
 
 class ComposerInformationBlockTest extends TestCase
